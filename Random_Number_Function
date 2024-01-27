@@ -1,0 +1,20 @@
+#Random Number Integer
+def generate_random_number(self, lower_limit=0, upper_limit=100):
+        """
+        Generate a random number within the specified range [lower_limit, upper_limit).
+        """
+        return random.randint(lower_limit, upper_limit - 1)
+
+#Random Number Float
+    def generate_random_float(self, lower_limit=0.0, upper_limit=1.0):
+        """
+        Generate a random floating-point number within the specified range [lower_limit, upper_limit).
+        """
+        return random.uniform(lower_limit, upper_limit)
+
+#Random Elements
+    def generate_random_element(self, elements):
+        """
+        Choose a random element from the given list.
+        """
+        return random.choice(elements)
